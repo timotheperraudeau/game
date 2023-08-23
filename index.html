@@ -8,7 +8,46 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <main>
+    <div id="game" class="container-fluid border border-dark vh-100 d-flex justify-content-center align-items-center">
+      <div class="container position-relative">
+        <div id="newGame" class="position-absolute top-0 start-50 translate-middle d-flex align-items-center mt-5">
+          <div class="icone border border-dark rounded-circle p-2"></div>
+          <div class="ms-2">NEW GAME</div>
+        </div>
+        <div id="dice" class="bg-white shadow position-absolute start-50 translate-middle-x"></div>
+        <div id="rollDice" class="position-absolute d-flex align-items-center">
+          <div class="icone mx-2"></div>
+          <div>ROLL DICE</div>
+        </div>
+        <div id="hold" class="position-absolute end-0 me-3 d-flex align-items-center">
+          <div class="icone me-2 border border-dark position-relative">
+            <img src="assets/arrow-down-long-solid.svg" alt="icone flèche" class="position-absolute start-50 top-0 translate-middle object-fit-cover">
+            <div class="border border-dark"></div>
+          </div>
+          <div>HOLD</div>
+        </div>
+        <div id="players" class="row">
+          <div id="player1" class="col-12 col-md-6 bg-light d-flex flex-column text-center justify-content-center">
+            <div class="title fs-1">PLAYER 1</div>
+            <div class="global">0</div>
+            <div class="current bg-danger py-3">
+              <p class="m-0">Current</p>
+              <p class="currentScore text-white m-0">0</p>
+            </div>
+          </div>
+          <div id="player2" class="col-12 col-md-6 bg-white d-flex flex-column text-center justify-content-center">
+            <div class="title fs-1">PLAYER 2</div>
+            <div class="global">0</div>
+            <div class="current bg-danger py-3">
+              <p class=" m-0">Current</p>
+              <p class="currentScore text-white m-0">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="assets/bootstrap.bundle.min.js"></script>
   <script src="app.js"></script>
 </body>

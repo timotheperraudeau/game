@@ -6,3 +6,69 @@
 *, body{
   font-family: "lato", serif;
 }
+
+#game{
+  background-image: url(assets/pexels-juan-pablo-serrano-arenas-1242348.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+#newGame .icone{
+  background-image: url(assets/plus-solid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  object-fit: cover;
+}
+
+#newGame .icone, #rollDice .icone, #hold .icone{
+  width: 20px;
+  height: 20px;
+}
+
+#player1, #player2{
+  height: 400px;
+}
+
+.title{
+  margin-top: 80px;
+}
+
+.global{
+  font-size: 50px;
+}
+
+.current{
+  width: 125px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.currentScore{
+  font-size: 25px;
+}
+
+#dice{
+  width: 100px;
+  height: 100px;
+  top: 350px;
+}
+
+#rollDice, #hold{
+  top: 400px;
+}
+
+#rollDice .icone{
+  background-image: url(assets/rotate-solid.svg);
+  background-repeat: no-repeat;
+}
+
+#hold img{
+  width: 75%;
+}
+
+#hold:nth-child(2){
+  width: 100%;
+  height: 100%
+}
