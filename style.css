@@ -116,3 +116,51 @@
 #hold img{
   width: 75%;
 }
+
+@media screen and (min-width: 768px) and (max-width: 999px){
+
+  #player1, #player2{
+    height: 500px;
+  }
+
+  #dice{
+    top: 150px;
+  }
+  
+  .current{
+    margin-top: 120px;
+  }
+
+  #rollDice, #hold{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #rollDice{
+    top: 325px;
+  }
+
+  #hold{
+    margin: 0px;
+    top: 400px;
+  }
+  
+}
+
+@media screen and (min-width: 1000px){
+  
+  #player1, #player2{
+    height: 600px;
+  }
+
+  #newGame{
+    top: 10px;
+  }
+
+  #dice{
+    top: 200px;
+  }
+
+
+
+}
