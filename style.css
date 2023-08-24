@@ -27,6 +27,7 @@
   height: 20px;
 }
 
+
 #player1, #player2{
   height: 400px;
 }
@@ -55,6 +56,54 @@
   top: 350px;
 }
 
+.diceFace{
+  width: 100px;
+  height: 100px;
+}
+
+.eltDice{
+  width: 15px;
+  height: 15px;
+}
+
+.one{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.two{
+  left: 10px;
+  top: 10px;
+}
+
+.three{
+  right: 10px;
+  bottom: 10px;
+}
+
+.four{
+  top: 10px;
+  right: 10px;
+}
+
+.five{
+  left: 10px;
+  bottom: 10px;
+}
+
+.six{
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%)
+}
+
+.seven{
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 #rollDice, #hold{
   top: 400px;
 }
@@ -66,9 +115,4 @@
 
 #hold img{
   width: 75%;
-}
-
-#hold:nth-child(2){
-  width: 100%;
-  height: 100%
 }
