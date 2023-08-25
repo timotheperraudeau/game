@@ -14,6 +14,10 @@
   object-fit: cover;
 }
 
+#newGame{
+  top: 50px !important;
+}
+
 #newGame .icone{
   background-image: url(assets/plus-solid.svg);
   background-repeat: no-repeat;
@@ -104,6 +108,10 @@
   transform: translateY(-50%);
 }
 
+#nbr1, #nbr2, #nbr3, #nbr4, #nbr5, #nbr6{
+  display: none;
+}
+
 #rollDice, #hold{
   top: 400px;
 }
@@ -117,7 +125,7 @@
   width: 75%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 999px){
+@media screen and (min-width: 768px){
 
   #player1, #player2{
     height: 500px;
@@ -153,14 +161,21 @@
     height: 600px;
   }
 
-  #newGame{
-    top: 10px;
-  }
-
   #dice{
     top: 200px;
   }
 
+  .current{
+    margin-top: 150px;
+  }
+
+  #rollDice{
+    top: 355px;
+  }
+
+  #hold{
+    top: 430px;
+  }
 
 
 }
