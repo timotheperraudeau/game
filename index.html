@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Game</title>
 </head>
 <body>
   <main>
     <div id="game" class="container-fluid border border-dark vh-100 d-flex justify-content-center align-items-center">
       <div class="container position-relative">
-        <div id="newGame" class="position-absolute start-50 translate-middle d-flex align-items-center">
+        <div id="newGame" class="position-absolute start-50 translate-middle d-flex align-items-center z-3">
           <div class="icone border border-dark rounded-circle p-2"></div>
           <div class="ms-2">NEW GAME</div>
         </div>
-        <div id="dice" class="bg-white shadow position-absolute start-50 translate-middle-x">
+        <div id="dice" class="bg-white shadow position-absolute start-50 translate-middle-x z-3">
           <div id="nbr1" class="diceFace position-absolute">
             <div class="eltDice one position-absolute bg-danger rounded-circle"></div>
           </div>
@@ -50,18 +50,19 @@
             <div class="eltDice seven position-absolute bg-danger rounded-circle"></div>
           </div>
         </div>
-        <div id="rollDice" class="position-absolute d-flex align-items-center">
+        <div id="rollDice" class="position-absolute d-flex align-items-center z-3">
           <div class="icone mx-2"></div>
           <div>ROLL DICE</div>
         </div>
-        <div id="hold" class="position-absolute end-0 me-3 d-flex align-items-center justify-content-center">
+        <div id="hold" class="position-absolute end-0 me-3 d-flex align-items-center justify-content-center z-3">
           <div class="icone me-2 border border-dark position-relative">
             <img src="assets/arrow-down-long-solid.svg" alt="icone flèche" class="position-absolute start-50 top-0 translate-middle object-fit-cover">
           </div>
           <div>HOLD</div>
         </div>
         <div id="players" class="row">
-          <div id="player1" class="col-12 col-md-6 bg-light d-flex flex-column text-center justify-content-center">
+          <div id="player1" class="col-12 col-md-6 bg-light d-flex flex-column text-center justify-content-center position-relative">
+            <div id="user1" class="user eltDice bg-danger rounded-circle position-absolute"></div>
             <div class="title fs-1">PLAYER 1</div>
             <div class="global">0</div>
             <div class="current bg-danger py-3">
@@ -69,7 +70,8 @@
               <p class="currentScore text-white m-0">0</p>
             </div>
           </div>
-          <div id="player2" class="col-12 col-md-6 bg-white d-flex flex-column text-center justify-content-center">
+          <div id="player2" class="col-12 col-md-6 bg-white d-flex flex-column text-center justify-content-center position-relative">
+            <div id="user2" class="user eltDice bg-danger rounded-circle position-absolute"></div>
             <div class="title fs-1">PLAYER 2</div>
             <div class="global">0</div>
             <div class="current bg-danger py-3">

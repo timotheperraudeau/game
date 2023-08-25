@@ -16,6 +16,7 @@
 
 #newGame{
   top: 50px !important;
+  cursor: pointer;
 }
 
 #newGame .icone{
@@ -34,6 +35,12 @@
 
 #player1, #player2{
   height: 400px;
+}
+
+.user{
+  top: 94px;
+  right: 100px;
+  display: none;
 }
 
 .title{
@@ -108,12 +115,13 @@
   transform: translateY(-50%);
 }
 
-#nbr1, #nbr2, #nbr3, #nbr4, #nbr5, #nbr6{
+.diceFace{
   display: none;
 }
 
 #rollDice, #hold{
   top: 400px;
+  cursor: pointer;
 }
 
 #rollDice .icone{
@@ -125,6 +133,14 @@
   width: 75%;
 }
 
+@media screen and (min-width: 576px){
+
+  .user{
+    right: 160px;
+    top: 100px;
+  }
+}
+
 @media screen and (min-width: 768px){
 
   #player1, #player2{
@@ -133,6 +149,10 @@
 
   #dice{
     top: 150px;
+  }
+
+  .user{
+    right: 80px;
   }
   
   .current{
@@ -155,7 +175,7 @@
   
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 992px){
   
   #player1, #player2{
     height: 600px;
@@ -163,6 +183,11 @@
 
   #dice{
     top: 200px;
+  }
+
+  .user{
+    top: 102px;
+    right: 130px;
   }
 
   .current{
@@ -177,5 +202,13 @@
     top: 430px;
   }
 
+}
+
+@media screen and (min-width: 1200px){
+
+  .user{
+    top: 104px;
+    right: 160px;
+  }
 
 }
