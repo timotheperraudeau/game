@@ -116,6 +116,7 @@ class Game{
       this.globalResetUserOne();
       this.globalResetUserTwo();
       this.userChange();
+      document.getElementById('winner').textContent = ` `;
     }
 }
 
